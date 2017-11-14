@@ -1,0 +1,66 @@
+.question {
+  padding-top: 5px;
+  color : #0A0AFF;
+  background-color: white;
+  text-indent: 25px;
+}
+/*review media queries to view app on Mobile device such as iPhone, to add @media only screen and (min-width: 640px) {*/
+@media only screen and (min-width: 640px) /*mobile screen dimensions*/
+{
+  .start-quiz 
+  {
+    padding: 10px;
+  }
+  .next-question-button
+  {
+    padding: 10px;
+  }
+}
+.answercorrect {
+  color : green;
+}
+.start-section {
+  text-align: center;
+}
+.error {
+  display :inline-block;
+}
+body {
+  color: white;
+  font-family: 'Roboto', Sans-Serif;
+  font-size: 16px;
+  font-weight: 600;
+}
+html {
+  background-color : #7a7a7a;
+}
+/*Welcome to the Modern Sci Theories Quiz attributes*/
+header {
+  text-indent: 50px;
+  text-align: center;
+  background-color: black;
+}
+/*bottom bar showing results*/
+.col-3 {
+  display: inline-block;
+}
+.status-score {
+  display: inline-block;
+}
+.nav-button {
+  display: inline-block;
+}
+.nav-results-status {
+  background-color: blue;
+  display: inline-block;
+  color: yellow;
+  height: 100%;
+  width: 100%;
+}
+.result-section {
+  text-align: center;
+}
+/*need 2nd css file named and called in the html as a style sheet, @media only screen and (min-width: 640px) {
+   { .form : 50% } 
+  
+}*/

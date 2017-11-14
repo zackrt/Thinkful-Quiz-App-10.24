@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width">
+    <title>Modern Scientific Theories Quiz</title>
+    <link href="index.css" rel="stylesheet" type="text/css" />
+</head>
+   <body>
+     <main role="main">
+<header role ="banner">
+     <h1 class='title-section' id='title-section'>Welcome to the Modern Scientific Theories Quiz</h1>
+</header>
+<!--forms questions, FOR Question page-->
+<!--moved instructions to own section "start-section"-->
+        <section class="start-section">
+         <p class="instructions-text" id="instructions">Please select only 1 answer for each question. Keyboard users [tab], arrows, and [enter]  </p>
+         <p id="start-btn-instructions">Click on Start to begin.</p>
+        <button class='start-quiz' id='start-quiz'>Start</button>
+         </section>
+         <br>
+         <!--Start of quiz-section with questions-->
+<form class="quizzes" id='quiz-form' style="display: block;">
+         <section class='quiz-section' id="quiz-section" style="display: none;">
+  <div class ="question" id="question" name="questionblock">
+    <p class="questionText">questionText</p>
+      <input type="radio" class="answerbutton" name="answerchoice" value=0>a) <span id="answer1text">[answer1text]</span>
+      <br>
+      <div class="answercorrect" id="answercorrect"></div>
+      <p>
+      </p>
+      <input type="radio" class="answerbutton" required name="answerchoice" value =1>b) <span id="answer2text">[answer2text]</span>
+      <br>
+      <p>
+      </p>
+      <input type="radio" class="answerbutton" required name="answerchoice" value =2>c) <span id="answer3text">[answer3text]</span>
+      <br>
+      <p>
+      </p>
+      <div class="answerincorrect" id="answerincorrect"></div>
+      </div>
+</section>
+<!--this section "nav-results-status" will show question #, score, with a Back button and next button-->
+<div class="row nav-results-status-bar">
+ <section class="nav-results-status" id="nav-results-status" style="display: none;">
+          <div class= "nav-row">
+        <div class="status-score">
+          <div class="col-3">[Question:<span class="current-Question-Num" id="currentQuestionNum">1</span>/5]</div>
+          <div class="col-3">[Score:<span class="score" id="currentScore">0</span>/5]</div>
+        </div>     
+          <div class="nav-button">
+            <div class="col-3"><input type="button" value="Submit" id="submit-answer-button" class="btn btn-default classic-btn normal-btn"></div>
+          <div class="col-3"><input type="button" value="Next Question" id="next-question-button" class="btn btn-default classic-btn normal-btn" style="display: none;">
+          <div class ="error" id= "pleaseSelectAny"></div>
+          </div>
+        </div>
+      <!--Sorry, incorrect, try again!-->
+      <!--Need to add all a11y protocols for accessiblity-->
+</div>
+</section>
+</div>
+</form>
+  <section class="result-section" id="result-section" style="display: none;">
+    <div class="pass-fail">
+      <h4 class="txt-results" id ="passed">Passed</h4>
+      <h4 class="txt-results" id ="failed">Failed</h4>
+    </div>
+    <div id="accordion">
+      <h4 class="final-score" id="finalscore"></h4>
+      <div class="result-msg">Press Restart Quiz to Try Again!</div>
+    </div>
+    <br>
+    <input type="button" value="Restart Quiz" id="restart-Quiz" class="classic-btn normal-btn btn btn-default try-again">
+  </section>
+       <script
+          src="https://code.jquery.com/jquery-3.2.1.min.js"
+          integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4="
+          crossorigin="anonymous"></script>
+      <script src="index.js"></script>
+      </main>
+  </body>
+</html>
